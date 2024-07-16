@@ -22,9 +22,6 @@ spec:
         - name: mongo-persistent-storage
           persistentVolumeClaim:
             claimName: mongo-pvc
-          hostPath:
-            path: /mnt/some/directory/structure
-            type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: Service
